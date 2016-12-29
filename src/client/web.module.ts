@@ -4,6 +4,8 @@ import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { Http } from '@angular/http';
+import { MaterialModule } from '@angular/material';
+import { NgSemanticModule } from 'ng-semantic';
 
 // libs
 import { StoreModule } from '@ngrx/store';
@@ -50,6 +52,8 @@ export function cons() {
 @NgModule({
   imports: [
     BrowserModule,
+    MaterialModule,
+    NgSemanticModule,
     CoreModule.forRoot([
       { provide: WindowService, useFactory: (win) },
       { provide: ConsoleService, useFactory: (cons) },

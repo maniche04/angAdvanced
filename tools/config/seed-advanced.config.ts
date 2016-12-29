@@ -112,7 +112,7 @@ export class SeedAdvancedConfig extends SeedConfig {
       {
         name: 'deep-freeze',
         path: `${this.APP_BASE}node_modules/deep-freeze/index.js`
-      }
+      },
     ];
 
     this.addPackagesBundles(additionalPackages);
